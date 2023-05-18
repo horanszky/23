@@ -1,6 +1,8 @@
-# Armbian vs  tvbox
+<p align="center">
+Armbian vs. tvbox
+</p>
 
-## Armbian [Debian desktop Linux with XFCE] vs. allwinner/amlogic/rockchip tvbox with Android<br />
+# Armbian [Debian desktop Linux with XFCE] vs. allwinner/amlogic/rockchip tvbox with Android<br />
 <br />
 Tv box with Android, and "Discreet Launcher", with a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.<br />
 This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc with Armbian Linux + LibreOffice, Firefox ESR, Telegram, Kodi.. on XFCE lightweight desktop environment.<br />
