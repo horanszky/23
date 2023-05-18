@@ -1,43 +1,42 @@
-# 23
-Armbian vs  tvbox
+# Armbian vs  tvbox
 
-Armbian [Debian desktop Linux with XFCE] vs. allwinner/amlogic/rockchip tvbox with Android<br />
+## Armbian [Debian desktop Linux with XFCE] vs. allwinner/amlogic/rockchip tvbox with Android<br />
 <br />
 Tv box with Android, and "Discreet Launcher", with a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.<br />
 This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc with Armbian Linux + LibreOffice, Firefox ESR, Telegram, Kodi.. on XFCE lightweight desktop environment.<br />
 <br />
-U can touch this - it's Hammer time!<br />
+**U can touch this - it's Hammer time!**<br />
 <br />
 [Lookout, Armbian is pink, use Dark-Olympic theme after instalation!]<br />
 [few storage? use clouds: megasync, filen, skiff..]<br />
 <br />
-1. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img<br />
+**a. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img**<br />
 <br />
-2. rename: u-boot* to u-boot.ext<br />
+**b. rename: u-boot* to u-boot.ext**<br />
 [mSD /BOOT/]<br />
 <br />
-3. edit /BOOT/extlinux/extlinux.conf with texteditor<br />
+**c. edit /BOOT/extlinux/extlinux.conf with texteditor**<br />
 example:<br />
 FDT /dtb/amlogic/frankójankó.dtb<br />
 #FDT /dtb/amlogic/nem frankójankó.dtb<br />
 <br />
-4. The DTB<br />
+**d. The DTB**<br />
 [DeviceTree Compiler (DTC), device tree blob (DTB), device tree source (DTS), device tree overlay (DTO)]<br />
 <br />
 dtb sources:<br />
 <br />
-I. burned Armbian version's /BOOT/dtb/ folder<br />
+**I. burned Armbian version's /BOOT/dtb/ folder**<br />
 or<br />
 <br />
-II. attached zip's - not the zip's, extract..<br />
+**II. attached zip's - not the zip's, extract..**<br />
 [Armbian_19, Armbian_2010, Armbian_2108, Armbian_2302, EmuELEC_42, EmuELEC_43]<br />
 or<br />
 <br />
-III. root/dev/dtb.img from Android with root file explorer [FX?]<br />
+**III. root/dev/dtb.img from Android with root file explorer [FX?]**<br />
 [dd if=/dev/dtb | gzip > /*/*/dtb.img.gz]<br />
 or<br />
 <br />
-IV. dtc in CLI<br />
+**IV. dtc in CLI**<br />
 dtc -I fs -o x.dtb /sys/firmware/devicetree/base<br />
 dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb<br />
 dtc -I dts -O dtb -o x.dtb x.dts<br />
@@ -45,12 +44,11 @@ dtc -I dts -O dtb -f x.dts -o x.dtb<br />
 [pk install dtc, sudo apt-get install dtc]<br />
 or<br />
 <br />
-V.<br />
+**V. extract-dtb in CLI**<br />
 extract-dtb /sys/firmware/devicetree/base -o /*/*/x<br />
 [pk install extract-dtb, sudo apt-get install extract-dtb]<br />
 <br />
-<br />
-___dtb/Amlogic chip name scheme:
+**dtb/Amlogic chip name scheme:**<br />
 <br />
 gxbb > s905<br />
 gxl > s905x<br />
@@ -59,7 +57,7 @@ g12b > s922x<br />
 gxm > s912<br />
 sm1 > s905x3<br />
 <br />
-___OS name scheme:<br />
+**OS name scheme:**<br />
 <br />
 Armbian 23.02.1 (23-02-25)..<br />
 Armbian 22.11.4 (23-01-23)..<br />
@@ -81,10 +79,10 @@ Ubuntu 20.04 LTS Focal Fossa 20-04-23<br />
 Ubuntu 18.04 LTS Bionic Beaver 18-04-26<br />
 Ubuntu 16.04 LTS Xenial Xerus 16-04-21<br />
 <br />
-___Zip's content:<br />
+### Zip's content:<br />
 <br />
 
-Armbian_19
+**Armbian_19**
 
 meson-axg-s400.dtb
 meson-g12a-u200.dtb
@@ -117,7 +115,7 @@ meson-gxm-q201.dtb
 meson-gxm-rbox-pro.dtb
 meson-gxm-vega-s96.dtb
 
-Armbian_2010
+**Armbian_2010**
 
 allwinner/sun50i-a64-amarula-relic.dtb
 allwinner/sun50i-a64-bananapi-m64.dtb
@@ -253,7 +251,7 @@ rockchip/rk3399-roc-pc-mezzanine.dtb
 rockchip/rk3399-sapphire.dtb
 rockchip/rk3399-sapphire-excavator.dtb
 
-Armbian_2108
+**Armbian_2108**
 
 amlogic/meson-a1-ad401.dtb
 amlogic/meson-axg-s400.dtb
@@ -353,7 +351,7 @@ rockchip/rk3399-roc-pc-mezzanine.dtb
 rockchip/rk3399-sapphire.dtb
 rockchip/rk3399-sapphire-excavator.dtb
 
-Armbian_2302
+**Armbian_2302**
 
 meson-a1-ad401.dtb
 meson-axg-jethome-jethub-j100.dtb
@@ -430,7 +428,7 @@ meson-sm1-sei610.dtb
 meson-sm1-x96-air.dtb
 meson-sm1-x96-air-gbit.dtb
 
-EmuELEC_42
+**EmuELEC_42**
 
 g12a_s905x2_2g.dtb
 g12a_s905x2_2g_1gbit.dtb
@@ -470,7 +468,7 @@ sm1_s905x3_odroid_c4.dtb
 sm1_s905x3_odroid_c4_joystick.dtb
 sm1_s905x3_odroid_hc4.dtb
 
-EmuELEC_43
+**EmuELEC_43**
 
 gxbb_p200.dtb
 gxbb_p200_1G_1Gbit.dtb
@@ -539,5 +537,3 @@ gxm_q201_3g.dtb
 gxm_q201_3g_1gbit.dtb
 gxm_q201_3g_c400_plus.dtb
 gxm_q201_c300_pro.dtb
-
-
