@@ -58,7 +58,7 @@ or<br />
 extract-dtb /sys/firmware/devicetree/base -o /*/*/x<br />
 [pk install extract-dtb, sudo apt-get install extract-dtb]<br />
 <br />
-**dtb/Amlogic chip name scheme:**<br />
+**dtb/Amlogic name scheme:**<br />
 <br />
 gxbb > s905<br />
 gxl > s905x<br />
