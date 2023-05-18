@@ -52,34 +52,34 @@ extract-dtb /sys/firmware/devicetree/base -o /*/*/x
 
 ___dtb/Amlogic chip name scheme:
 
-gxbb > s905
-gxl > s905x
-g12a > s905x2
-g12b > s922x
-gxm > s912
-sm1 > s905x3
+- gxbb > s905
+- gxl > s905x
+- g12a > s905x2
+- g12b > s922x
+- gxm > s912
+- sm1 > s905x3
 
 ___OS name scheme:
 
-Armbian 23.02.1 (23-02-25)..
-Armbian 22.11.4 (23-01-23)..
-Armbian 22.02 (22-02-28)..
-Armbian 21.08 (21-08-31)..
-Armbian 21.02.1 (21-02-03)..
-Armbian 20.11 (20-11-24)..
-Armbian 20.08.22 (20-11-8)..
+- Armbian 23.02.1 (23-02-25)..
+- Armbian 22.11.4 (23-01-23)..
+- Armbian 22.02 (22-02-28)..
+- Armbian 21.08 (21-08-31)..
+- Armbian 21.02.1 (21-02-03)..
+- Armbian 20.11 (20-11-24)..
+- Armbian 20.08.22 (20-11-8)..
 
-Debian 14 forky
-Debian 13 trixie
-Debian 12 bookworm 
-Debian 11 bullseye
-Debian 10 buster
-Debian 9 stretch
+- Debian 14 forky
+- Debian 13 trixie
+- Debian 12 bookworm 
+- Debian 11 bullseye
+- Debian 10 buster
+- Debian 9 stretch
 
-Ubuntu 22.04 LTS Jammy Jellyfish 22-04-21
-Ubuntu 20.04 LTS Focal Fossa 20-04-23
-Ubuntu 18.04 LTS Bionic Beaver 18-04-26
-Ubuntu 16.04 LTS Xenial Xerus 16-04-21
+- Ubuntu 22.04 LTS Jammy Jellyfish 22-04-21
+- Ubuntu 20.04 LTS Focal Fossa 20-04-23
+- Ubuntu 18.04 LTS Bionic Beaver 18-04-26
+- Ubuntu 16.04 LTS Xenial Xerus 16-04-21
 
 
 
