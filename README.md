@@ -17,11 +17,11 @@ This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silen
 
 <br />
 
-**1. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img**<br />
+**1. Etcher img burner [balena, AppImage] + mSD card + Armbian...img**<br />
 
 <br />
 
-**2. rename: u-boot* to u-boot.ext**<br />
+**2. rename: u-boot.. to u-boot.ext**<br />
 [mSD /BOOT/]<br />
 
 <br />
@@ -32,7 +32,7 @@ FDT /dtb/amlogic/frankojanko.dtb<br />
 #FDT /dtb/amlogic/nem frankojanko.dtb<br />
 <br />
 
-**d. The DTB**<br />
+**d. The DTB [epic drama]**<br />
 
 [DeviceTree Compiler (DTC), device tree blob (DTB), device tree source (DTS), device tree overlay (DTO)]<br />
 <br />
@@ -54,7 +54,7 @@ or<br />
 
 **III. root/dev/dtb.img from Android with root file explorer [FX?]**<br />
 
-[dd if=/dev/dtb | gzip > /*/*/dtb.img.gz]<br />
+[dd if=/dev/dtb | gzip > /../../dtb.img.gz]<br />
 or<br />
 <br />
 
@@ -70,7 +70,7 @@ or<br />
 
 **V. extract-dtb in CLI**<br />
 
-extract-dtb /sys/firmware/devicetree/base -o /*/*/x<br />
+extract-dtb /sys/firmware/devicetree/base -o /../../x<br />
 [pk install extract-dtb, sudo apt-get install extract-dtb]<br />
 <br />
 
