@@ -16,37 +16,50 @@ This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silen
 ![pin.png](pin.png)
 
 <br />
+
 **1. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img**<br />
 
 <br />
+
 **2. rename: u-boot* to u-boot.ext**<br />
 [mSD /BOOT/]<br />
 
 <br />
+
 **3. edit /BOOT/extlinux/extlinux.conf with texteditor**<br />
 example:<br />
 FDT /dtb/amlogic/frankojanko.dtb<br />
 #FDT /dtb/amlogic/nem frankojanko.dtb<br />
 <br />
+
 **d. The DTB**<br />
+
 [DeviceTree Compiler (DTC), device tree blob (DTB), device tree source (DTS), device tree overlay (DTO)]<br />
 <br />
 
 ## dtb sources:<br />
 
 <br />
+
 **I. burned Armbian version's /BOOT/dtb/ folder**<br />
+
 or<br />
 <br />
+
 **II. attached zip's - not the zip's, extract..**<br />
+
 [Armbian_19, Armbian_2010, Armbian_2108, Armbian_2302, EmuELEC_42, EmuELEC_43]<br />
 or<br />
 <br />
+
 **III. root/dev/dtb.img from Android with root file explorer [FX?]**<br />
+
 [dd if=/dev/dtb | gzip > /*/*/dtb.img.gz]<br />
 or<br />
 <br />
+
 **IV. dtc in CLI**<br />
+
 dtc -I fs -o x.dtb /sys/firmware/devicetree/base<br />
 dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb<br />
 dtc -I dts -O dtb -o x.dtb x.dts<br />
@@ -54,11 +67,15 @@ dtc -I dts -O dtb -f x.dts -o x.dtb<br />
 [pk install dtc, sudo apt-get install dtc]<br />
 or<br />
 <br />
+
 **V. extract-dtb in CLI**<br />
+
 extract-dtb /sys/firmware/devicetree/base -o /*/*/x<br />
 [pk install extract-dtb, sudo apt-get install extract-dtb]<br />
 <br />
-**dtb/Amlogic name scheme:**<br />
+
+## dtb/Amlogic name scheme:<br />
+
 <br />
 gxbb > s905<br />
 gxl > s905x<br />
@@ -67,7 +84,9 @@ g12b > s922x<br />
 gxm > s912<br />
 sm1 > s905x3<br />
 <br />
-**OS name scheme:**<br />
+
+## OS name scheme:<br />
+
 <br />
 Armbian 23.02.1 (23-02-25)..<br />
 Armbian 22.11.4 (23-01-23)..<br />
