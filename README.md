@@ -1,10 +1,10 @@
 # 23
 Armbian vs  tvbox
 
-Armbian [Debian desktop Linux whit XFCE] vs. allwinner/amlogic/rockchip tvbox whit Android
+Armbian [Debian desktop Linux with XFCE] vs. allwinner/amlogic/rockchip tvbox with Android
 
-Tv box whit Android, and "Discreet Launcher", whit a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.
-This low energy device whit lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc whit Armbian Linux + LibreOffice, Firefox ESR, Telegram.. on XFCE lightweight desktop environment.
+Tv box with Android, and "Discreet Launcher", with a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.
+This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc with Armbian Linux + LibreOffice, Firefox ESR, Telegram.. on XFCE lightweight desktop environment.
 
 U can touch this - it's Hammer time!
 
@@ -16,7 +16,7 @@ U can touch this - it's Hammer time!
 2. rename: u-boot* to u-boot.ext
 [mSD /BOOT/]
 
-3. edit /BOOT/extlinux/extlinux.conf whit texteditor
+3. edit /BOOT/extlinux/extlinux.conf with texteditor
 example:
 FDT /dtb/amlogic/frankójankó.dtb
 #FDT /dtb/amlogic/nem frankójankó.dtb
@@ -33,7 +33,7 @@ II. attached zip's - not the zip's, extract..
 [Armbian_19, Armbian_2010, Armbian_2108, Armbian_2302, EmuELEC_42, EmuELEC_43]
 or
 
-III. root/dev/dtb.img from Android whit root file explorer [FX?]
+III. root/dev/dtb.img from Android with root file explorer [FX?]
 [dd if=/dev/dtb | gzip > /*/*/dtb.img.gz]
 or
 
@@ -80,3 +80,6 @@ Ubuntu 22.04 LTS Jammy Jellyfish 22-04-21
 Ubuntu 20.04 LTS Focal Fossa 20-04-23
 Ubuntu 18.04 LTS Bionic Beaver 18-04-26
 Ubuntu 16.04 LTS Xenial Xerus 16-04-21
+
+
+
