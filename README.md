@@ -31,7 +31,9 @@ FDT /dtb/amlogic/frankojanko.dtb<br />
 **d. The DTB**<br />
 [DeviceTree Compiler (DTC), device tree blob (DTB), device tree source (DTS), device tree overlay (DTO)]<br />
 <br />
-**dtb sources:**<br />
+
+## dtb sources:<br />
+
 <br />
 **I. burned Armbian version's /BOOT/dtb/ folder**<br />
 or<br />
