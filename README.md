@@ -1,88 +1,88 @@
 # 23
 Armbian vs  tvbox
 
-Armbian [Debian desktop Linux with XFCE] vs. allwinner/amlogic/rockchip tvbox with Android
-
-Tv box with Android, and "Discreet Launcher", with a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.
-This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc with Armbian Linux + LibreOffice, Firefox ESR, Telegram.. on XFCE lightweight desktop environment.
-
-U can touch this - it's Hammer time!
-
-[Lookout, Armbian is pink, use Dark-Olympic theme after instalation!]
-[few storage? use clouds: megasync, filen, skiff..]
-
-1. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img
-
-2. rename: u-boot* to u-boot.ext
-[mSD /BOOT/]
-
-3. edit /BOOT/extlinux/extlinux.conf with texteditor
-example:
-- FDT /dtb/amlogic/frankójankó.dtb
-- #FDT /dtb/amlogic/nem frankójankó.dtb
-
-4. The DTB
-[DeviceTree Compiler (DTC), device tree blob (DTB), device tree source (DTS), device tree overlay (DTO)]
-
-dtb sources:
-
-I. burned Armbian version's /BOOT/dtb/ folder
-or
-#
-II. attached zip's - not the zip's, extract..
-[Armbian_19, Armbian_2010, Armbian_2108, Armbian_2302, EmuELEC_42, EmuELEC_43]
-or
-#
-III. root/dev/dtb.img from Android with root file explorer [FX?]
-[dd if=/dev/dtb | gzip > /*/*/dtb.img.gz]
-or
-#
-IV. dtc in CLI
-- dtc -I fs -o x.dtb /sys/firmware/devicetree/base
-- dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb
-- dtc -I dts -O dtb -o x.dtb x.dts
-- dtc -I dts -O dtb -f x.dts -o x.dtb
-[pk install dtc, sudo apt-get install dtc]
-or
-#
-V. 
-extract-dtb /sys/firmware/devicetree/base -o /*/*/x
-[pk install extract-dtb, sudo apt-get install extract-dtb]
-
-
+Armbian [Debian desktop Linux with XFCE] vs. allwinner/amlogic/rockchip tvbox with Android<br />
+<br />
+Tv box with Android, and "Discreet Launcher", with a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.<br />
+This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc with Armbian Linux + LibreOffice, Firefox ESR, Telegram, Kodi.. on XFCE lightweight desktop environment.<br />
+<br />
+U can touch this - it's Hammer time!<br />
+<br />
+[Lookout, Armbian is pink, use Dark-Olympic theme after instalation!]<br />
+[few storage? use clouds: megasync, filen, skiff..]<br />
+<br />
+1. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img<br />
+<br />
+2. rename: u-boot* to u-boot.ext<br />
+[mSD /BOOT/]<br />
+<br />
+3. edit /BOOT/extlinux/extlinux.conf with texteditor<br />
+example:<br />
+FDT /dtb/amlogic/frankójankó.dtb<br />
+#FDT /dtb/amlogic/nem frankójankó.dtb<br />
+<br />
+4. The DTB<br />
+[DeviceTree Compiler (DTC), device tree blob (DTB), device tree source (DTS), device tree overlay (DTO)]<br />
+<br />
+dtb sources:<br />
+<br />
+I. burned Armbian version's /BOOT/dtb/ folder<br />
+or<br />
+<br />
+II. attached zip's - not the zip's, extract..<br />
+[Armbian_19, Armbian_2010, Armbian_2108, Armbian_2302, EmuELEC_42, EmuELEC_43]<br />
+or<br />
+<br />
+III. root/dev/dtb.img from Android with root file explorer [FX?]<br />
+[dd if=/dev/dtb | gzip > /*/*/dtb.img.gz]<br />
+or<br />
+<br />
+IV. dtc in CLI<br />
+dtc -I fs -o x.dtb /sys/firmware/devicetree/base<br />
+dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb<br />
+dtc -I dts -O dtb -o x.dtb x.dts<br />
+dtc -I dts -O dtb -f x.dts -o x.dtb<br />
+[pk install dtc, sudo apt-get install dtc]<br />
+or<br />
+<br />
+V.<br />
+extract-dtb /sys/firmware/devicetree/base -o /*/*/x<br />
+[pk install extract-dtb, sudo apt-get install extract-dtb]<br />
+<br />
+<br />
 ___dtb/Amlogic chip name scheme:
-
-- gxbb > s905
-- gxl > s905x
-- g12a > s905x2
-- g12b > s922x
-- gxm > s912
-- sm1 > s905x3
-
-___OS name scheme:
-
-- Armbian 23.02.1 (23-02-25)..
-- Armbian 22.11.4 (23-01-23)..
-- Armbian 22.02 (22-02-28)..
-- Armbian 21.08 (21-08-31)..
-- Armbian 21.02.1 (21-02-03)..
-- Armbian 20.11 (20-11-24)..
-- Armbian 20.08.22 (20-11-8)..
-#
-- Debian 14 forky
-- Debian 13 trixie
-- Debian 12 bookworm 
-- Debian 11 bullseye
-- Debian 10 buster
-- Debian 9 stretch
-#
-- Ubuntu 22.04 LTS Jammy Jellyfish 22-04-21
-- Ubuntu 20.04 LTS Focal Fossa 20-04-23
-- Ubuntu 18.04 LTS Bionic Beaver 18-04-26
-- Ubuntu 16.04 LTS Xenial Xerus 16-04-21
-
-___Zip's content:
-
+<br />
+gxbb > s905<br />
+gxl > s905x<br />
+g12a > s905x2<br />
+g12b > s922x<br />
+gxm > s912<br />
+sm1 > s905x3<br />
+<br />
+___OS name scheme:<br />
+<br />
+Armbian 23.02.1 (23-02-25)..<br />
+Armbian 22.11.4 (23-01-23)..<br />
+Armbian 22.02 (22-02-28)..<br />
+Armbian 21.08 (21-08-31)..<br />
+Armbian 21.02.1 (21-02-03)..<br />
+Armbian 20.11 (20-11-24)..<br />
+Armbian 20.08.22 (20-11-8)..<br />
+<br />
+Debian 14 forky<br />
+Debian 13 trixie<br />
+Debian 12 bookworm<br />
+Debian 11 bullseye<br />
+Debian 10 buster<br />
+Debian 9 stretch<br />
+<br />
+Ubuntu 22.04 LTS Jammy Jellyfish 22-04-21<br />
+Ubuntu 20.04 LTS Focal Fossa 20-04-23<br />
+Ubuntu 18.04 LTS Bionic Beaver 18-04-26<br />
+Ubuntu 16.04 LTS Xenial Xerus 16-04-21<br />
+<br />
+___Zip's content:<br />
+<br />
 
 Armbian_19
 
