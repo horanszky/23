@@ -28,15 +28,15 @@ dtb sources:
 
 I. burned Armbian version's /BOOT/dtb/ folder
 or
-
+#
 II. attached zip's - not the zip's, extract..
 [Armbian_19, Armbian_2010, Armbian_2108, Armbian_2302, EmuELEC_42, EmuELEC_43]
 or
-
+#
 III. root/dev/dtb.img from Android with root file explorer [FX?]
 [dd if=/dev/dtb | gzip > /*/*/dtb.img.gz]
 or
-
+#
 IV. dtc in CLI
 - dtc -I fs -o x.dtb /sys/firmware/devicetree/base
 - dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb
@@ -44,7 +44,7 @@ IV. dtc in CLI
 - dtc -I dts -O dtb -f x.dts -o x.dtb
 [pk install dtc, sudo apt-get install dtc]
 or
-
+#
 V. 
 extract-dtb /sys/firmware/devicetree/base -o /*/*/x
 [pk install extract-dtb, sudo apt-get install extract-dtb]
