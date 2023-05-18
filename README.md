@@ -9,6 +9,9 @@ This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silen
 <br />
 [Lookout, Armbian is pink, use Dark-Olympic theme after instalation!]<br />
 [few storage? use clouds: megasync, filen, skiff..]<br />
+<br />
+
+![pin.png](pin.png)
 
 <br />
 **a. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img**<br />
