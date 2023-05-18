@@ -5,7 +5,9 @@
 Tv box with Android, and "Discreet Launcher", with a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.<br />
 This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc with Armbian Linux + LibreOffice, Firefox ESR, Telegram, Kodi.. on XFCE lightweight desktop environment.<br />
 <br />
-**U can touch this - it's Hammer time!**<br />
+
+## U can touch this - it's Hammer time!<br />
+
 <br />
 [Lookout, Armbian is pink, use Dark-Olympic theme after instalation!]<br />
 [few storage? use clouds: megasync, filen, skiff..]<br />
@@ -14,20 +16,22 @@ This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silen
 ![pin.png](pin.png)
 
 <br />
-**a. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img**<br />
+**1. Etcher img burner [balena, AppImage] + mSD card + Armbian*.img**<br />
+
 <br />
-**b. rename: u-boot* to u-boot.ext**<br />
+**2. rename: u-boot* to u-boot.ext**<br />
 [mSD /BOOT/]<br />
+
 <br />
-**c. edit /BOOT/extlinux/extlinux.conf with texteditor**<br />
+**3. edit /BOOT/extlinux/extlinux.conf with texteditor**<br />
 example:<br />
-FDT /dtb/amlogic/frankójankó.dtb<br />
-#FDT /dtb/amlogic/nem frankójankó.dtb<br />
+FDT /dtb/amlogic/frankojanko.dtb<br />
+#FDT /dtb/amlogic/nem frankojanko.dtb<br />
 <br />
 **d. The DTB**<br />
 [DeviceTree Compiler (DTC), device tree blob (DTB), device tree source (DTS), device tree overlay (DTO)]<br />
 <br />
-dtb sources:<br />
+**dtb sources:**<br />
 <br />
 **I. burned Armbian version's /BOOT/dtb/ folder**<br />
 or<br />
@@ -83,7 +87,9 @@ Ubuntu 20.04 LTS Focal Fossa 20-04-23<br />
 Ubuntu 18.04 LTS Bionic Beaver 18-04-26<br />
 Ubuntu 16.04 LTS Xenial Xerus 16-04-21<br />
 <br />
-### Zip's content:<br />
+
+## Zip's content:<br />
+
 [search: Ctrl+F, Ctrl+G]<br />
 <br />
 
