@@ -38,10 +38,10 @@ III. root/dev/dtb.img from Android with root file explorer [FX?]
 or
 
 IV. dtc in CLI
-dtc -I fs -o x.dtb /sys/firmware/devicetree/base
-dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb
-dtc -I dts -O dtb -o x.dtb x.dts
-dtc -I dts -O dtb -f x.dts -o x.dtb
+- dtc -I fs -o x.dtb /sys/firmware/devicetree/base
+- dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb
+- dtc -I dts -O dtb -o x.dtb x.dts
+- dtc -I dts -O dtb -f x.dts -o x.dtb
 [pk install dtc, sudo apt-get install dtc]
 or
 
@@ -68,14 +68,14 @@ ___OS name scheme:
 - Armbian 21.02.1 (21-02-03)..
 - Armbian 20.11 (20-11-24)..
 - Armbian 20.08.22 (20-11-8)..
-
+#
 - Debian 14 forky
 - Debian 13 trixie
 - Debian 12 bookworm 
 - Debian 11 bullseye
 - Debian 10 buster
 - Debian 9 stretch
-
+#
 - Ubuntu 22.04 LTS Jammy Jellyfish 22-04-21
 - Ubuntu 20.04 LTS Focal Fossa 20-04-23
 - Ubuntu 18.04 LTS Bionic Beaver 18-04-26
