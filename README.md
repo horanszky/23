@@ -7,6 +7,9 @@ Armbian vs. tvbox
 Tv box with Android, and "Discreet Launcher" - with a normal launcher good for streaming, gaming, but the resolution not good for desktop computing.<br />
 This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silent, ideal tiny client pc with Armbian Linux + LibreOffice, Firefox ESR, Telegram, Kodi.. on XFCE lightweight desktop environment.<br />
 <br />
+dont waste your time on marketing, brands, ads.. - identify your board under Android with Termux:<br />
+cat /proc/device-tree/amlogic-dt-id<br />
+<br />
 
 ## U can touch this - it's Hammer time!<br />
 
