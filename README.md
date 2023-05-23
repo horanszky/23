@@ -111,7 +111,7 @@ Ubuntu 18.04 LTS Bionic Beaver 18-04-26<br />
 Ubuntu 16.04 LTS Xenial Xerus 16-04-21<br />
 <br />
 
-## Zip's content:<br />
+## Zip's content [dtb files]:<br />
 
 [search: Ctrl+F, Ctrl+G]<br />
 <br />
