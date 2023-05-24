@@ -9,6 +9,7 @@ This low energy device with lan/bluetooth/wifi/audio/"4K" is like a cheap, silen
 <br />
 dont waste your time on marketing, brands, ads.. - identify your board under Android with Termux:<br />
 cat /proc/device-tree/amlogic-dt-id<br />
+[amlogic]<br />
 <br />
 
 ## U can touch this - it's Hammer time!<br />
@@ -594,3 +595,4 @@ sudo apt-get install lightdm menulibre mugshot catfish l3afpad/leafpad/mousepad 
 sudo su<br />
 cd /root/<br />
 sudo ./install-aml.sh<br />
+[amlogic]<br />
