@@ -584,3 +584,13 @@ sudo apt-get install lightdm menulibre mugshot catfish l3afpad/leafpad/mousepad 
 - for Firefox ESR: uBlock Origin, Dark Mode, URL switcher<br />
 - maybe interesting: adb audacity exiftool fastboot gufw heimdall-flash macchanger mat thunar-gtkhash<br />
 - Dark-Olympic theme, because Armbian is pink :o)<br />
+<br />
+
+## The End [?]<br />
+
+<br />
+- Somethings went wrong? Lets try again - Level 1!<br />
+- lan/bluetooth/wifi/audio/boot ok? Burn!<br />
+sudo su<br />
+cd /root/<br />
+sudo ./install-aml.sh<br />
