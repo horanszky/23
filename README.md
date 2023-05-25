@@ -66,6 +66,7 @@ or<br />
 
 **IV. dtc in CLI**<br />
 
+dtc -q -I fs -O dtb /sys/firmware/devicetree/base -o /../../x.dtb<br />
 dtc -I fs -o x.dtb /sys/firmware/devicetree/base<br />
 dtc -I fs -O dtb /sys/firmware/devicetree/base -o x.dtb<br />
 dtc -I dts -O dtb -o x.dtb x.dts<br />
@@ -575,6 +576,10 @@ gxm_q201_3g.dtb
 gxm_q201_3g_1gbit.dtb
 gxm_q201_3g_c400_plus.dtb
 gxm_q201_c300_pro.dtb
+<br />
+
+![dsktp.png](dsktp.png)
+
 <br />
 ## tips and tricks:<br />
 <br />
