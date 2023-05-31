@@ -585,10 +585,10 @@ gxm_q201_c300_pro.dtb
 <br />
 - something is missing:<br />
 sudo apt-get install lightdm menulibre mugshot catfish l3afpad/leafpad/mousepad elementary-xfce-icon-theme..<br />
-- sudo apt-get install abiword firefox-esr gnumeric gpicview kodi pcmanfm vlc<br />
+- sudo apt-get install abiword firefox-esr gnumeric gpicview kodi pcmanfm vlc..<br />
 - sudo ufw enable<br />
-- for Firefox ESR: uBlock Origin, Dark Mode, URL switcher<br />
-- maybe interesting: adb audacity exiftool fastboot forensics-full gufw heimdall-flash macchanger mat thunar-gtkhash<br />
+- for Firefox ESR: uBlock Origin, Dark Mode, URL switcher..<br />
+- maybe interesting: adb audacity exiftool fastboot forensics-full gufw heimdall-flash macchanger mat thunar-gtkhash..<br />
 - Dark-Olympic theme, because Armbian is pink :o)<br />
 <br />
 
